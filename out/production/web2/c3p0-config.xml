@@ -1,0 +1,31 @@
+<c3p0-config>
+    <default-config>
+        <property name = "driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name = "jdbcUrl">jdbc:mysql:///runoob?useSSL=false&amp;serverTimezone=GMT&amp;characterEncoding=utf-8&amp;autoReconnect=true</property>
+        <property name = "user">root</property>
+        <property name = "password">cnmdsql</property>
+
+        <!-- 连接池参数 -->
+        <!--初始化申请的连接数量-->
+        <property name="initialPoolSize">5</property>
+        <!--最大的连接数量-->
+        <property name="maxPoolSize">10</property>
+        <!--超时时间-->
+        <property name="checkoutTimeout">3000</property>
+    </default-config>
+
+    <named-config name = "other">
+        <property name = "driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name = "jdbcUrl">jdbc:mysql:///runoob?useSSL=false&amp;serverTimezone=GMT&amp;characterEncoding=utf-8&amp;autoReconnect=true</property>
+        <property name = "user">root</property>
+        <property name = "password">cnmdsql</property>
+
+        <!-- 连接池参数 -->
+        <!--初始化申请的连接数量-->
+        <property name="initialPoolSize">5</property>
+        <!--最大的连接数量-->
+        <property name="maxPoolSize">15</property>
+        <!--超时时间-->
+        <property name="checkoutTimeout">1000</property>
+    </named-config>
+</c3p0-config>
